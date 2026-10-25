@@ -1,0 +1,18 @@
+{
+  "name": "Offscript \u2014 A journal for curious living",
+  "short_name": "Offscript",
+  "description": "An independent editorial journal for curious living.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f3f0e9",
+  "theme_color": "#f3f0e9",
+  "icons": [
+    {
+      "src": "/images/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

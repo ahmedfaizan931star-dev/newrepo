@@ -1,0 +1,4 @@
+.env
+/data/store.json
+/data/store.json.tmp
+.DS_Store

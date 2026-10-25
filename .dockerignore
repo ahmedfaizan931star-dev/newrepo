@@ -1,0 +1,10 @@
+.git
+.github
+node_modules
+.env
+.env.*
+!.env.example
+data/store.json
+data/store.json.tmp
+*.zip
+*.log

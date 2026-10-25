@@ -1,0 +1,25 @@
+OFFSCRIPT — QUICK START
+
+LOCAL
+1. Extract this folder.
+2. Recommended: install Node.js 24.22.1 LTS.
+3. Copy .env.example to .env and change the admin password/session secret.
+4. Run: npm start
+5. Open: http://localhost:3000
+6. Publishing Studio: http://localhost:3000/admin.html
+
+ONLINE
+- Use the included render.yaml Blueprint from a GitHub repository.
+- Provide ADMIN_USERNAME, ADMIN_PASSWORD (12+ characters), and SESSION_SECRET (32+ characters).
+- The Blueprint mounts a persistent disk at /var/data so posts/subscribers survive redeploys.
+- Set SITE_URL to your public HTTPS origin after deploy if using a custom domain.
+- Do not deploy with demo credentials or an ephemeral filesystem.
+
+TEST
+npm ci
+npm run check
+npm test
+
+Docs: README.md | Stack research: TECH-DECISIONS.md | Markdown: MARKDOWN-QUICK-REFERENCE.md | Photos: PHOTO-CREDITS.md
+
+Vercel deployment: import this repo and configure ADMIN_USERNAME, ADMIN_PASSWORD, SESSION_SECRET. For durable publishing/newsletter writes, connect Upstash Redis and expose UPSTASH_REDIS_REST_URL + UPSTASH_REDIS_REST_TOKEN; then redeploy. Full steps are in README.md.
